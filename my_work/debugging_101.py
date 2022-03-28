@@ -6,21 +6,22 @@ Created on Wed Mar 23 05:47:46 2022
 @author: youmisuk
 """
 
+
 # Debugging with print() and breakpoint()
 
 
 # :::: Example: create a max function ::::
 def max(lst):
     """Find the maximum integer value in a list"""
-    max_num = 0 
+    max_num = 0
     for num in lst:
         if num > max_num:
             max_num = num
     return max_num
 
 
-print(max([-10,-5,-1])) # check the output.
-    
+print(max([-10, -5, -1]))  # check the output.
+
 
 # :::: Debugging 101: use the print statement ::::
 def max(lst):
@@ -28,26 +29,28 @@ def max(lst):
     max_num = 0
     for num in lst:
         print('num:', num, 'maximum:', max_num)
-        if num > max_num: 
+        if num > max_num:
             print('num larger; re-assigning value:', num)
             max_num = num
     return max_num
 
-print(max([-10,-5,-1])) # check the output.
+
+print(max([-10, -5, -1]))  # check the output.
 
 
 # quick fix
 def max(lst):
     """Find the maximum integer value in a list"""
-    max_num = -float('inf') # an infinitely small value
+    max_num = -float('inf')  # an infinitely small value
     for num in lst:
         print('num:', num, 'maximum:', max_num)
-        if num > max_num: 
+        if num > max_num:
             print('num larger; re-assigning value:', num)
             max_num = num
     return max_num
 
-print(max([-10,-5,-1])) # check the output.
+
+print(max([-10, -5, -1]))  # check the output.
 
 
 # :::: Interactive debuggers: breakpoint() ::::
@@ -63,12 +66,12 @@ print(max([-10,-5,-1])) # check the output.
 
 def max(lst):
     """Find the maximum integer value in a list"""
-    max_num = 0 
+    max_num = 0
     for num in lst:
-        breakpoint() # enter debug mode        
+        breakpoint()  # enter debug mode
         if num > max_num:
             max_num = num
     return max_num
 
-print(max([-10,-5,-1])) # check the output.
 
+print(max([-10, -5, -1]))  # check the output.
