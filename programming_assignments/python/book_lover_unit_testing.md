@@ -67,11 +67,18 @@ test_2_rest_of_name
 
 3) Note the data accumulates in the object as you run additional tests
 
-4) To run the tests, put this code at the bottom of your script:
+4) To run the tests, put this code at the bottom of your Python script:
 
 ```
 if __name__ == '__main__':
     unittest.main() 
+```
+
+If you like to run unit tests in IPython or Jupyter,  use this code:
+
+```
+if __name__ == '__main__':
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
 ```
 
 **FILE SUBMISSION**  

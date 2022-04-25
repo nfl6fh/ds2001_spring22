@@ -42,7 +42,7 @@
 - The files can be in Jupyter Notebooks or Python scripts
 
 **3. POSTER (due April 26)**  
-- Each group will create a poster that effectively summarizes the final project, but there is no need to include results about unit testing in the poster. 
+- Each group will create a poster that effectively summarizes the final project. Please **include** results about unit testing in the poster. 
 - The poster should briefly include:
   - research question
   - data summary
